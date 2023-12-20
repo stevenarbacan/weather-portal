@@ -1,0 +1,174 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: helvetica;
+}
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 5px;
+  background-color: #12c2da;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.nav-bar {
+  justify-self: end;
+}
+.nav-bar ul {
+  display: flex;
+  gap: 10px;
+  font-size: 1.3em;
+  align-items: center;
+}
+.nav-bar a {
+  color: #7f95a2;
+}
+.nav-logo {
+  background-image: url(./img/isat-u-logo.png);
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background-size: cover;
+}
+.mode-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  color: #ffff;
+  background-color: #121010;
+}
+
+#toggle {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 0px auto;
+  justify-items: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 900;
+  color: #12a0ec;
+  width: 100%;
+}
+.section-1-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.university-img {
+  height: 70vh;
+  width: 80%;
+  border-radius: 15px 35px;
+  box-shadow: 10px 10px 4px #28abf6;
+  border: solid 2px #fff;
+}
+.greeting-img {
+  height: 80%;
+  width: 80%;
+}
+.greetings-container {
+  height: 50%;
+  line-height: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-self: start; */
+}
+.gretting-time {
+  font-size: 2em;
+  margin: 20px 0px;
+  margin: 0px 0px 40px 0px;
+  color: #82c3e7;
+}
+.greeting-content {
+  font-size: 1.8em;
+}
+.show-more-btn {
+  font-size: 1.2em;
+  padding: 8px;
+  background-color: #1ba9f6;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .nav-bar ul {
+    font-size: 0.9em;
+  }
+  .fluid-container {
+    width: 90%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .weater-data {
+    display: flex;
+    justify-content: center;
+  }
+  .reverse-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
+  .nav-bar ul {
+    font-size: 1.1em;
+  }
+  #toggle {
+    display: block;
+    justify-self: end;
+    background-image: url(./img/toggle.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 8px;
+    filter: brightness(300px);
+  }
+  .side-bar {
+    display: block;
+    position: absolute;
+    margin: 360px -5px 0px 0px;
+    padding: 30px 40px;
+    background-color: #b9fff4;
+    border-radius: 0px 0px 0px 8px;
+  }
+  .side-bar ul {
+    display: block;
+  }
+  .section-1 {
+    width: 95%;
+  }
+  .university-img {
+    height: 40vh;
+  }
+}

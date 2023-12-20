@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-logo"></div>
+      <div class="nav nav-bar">
+        <ul>
+          <li><a class="link" href="#section-1">Home</a></li>
+          <li><a class="link" href="#section-2">Weather</a></li>
+          <li><a class="link" href="#section-3">Map</a></li>
+          <li><a class="link" href="">About</a></li>
+          <li><a class="link" href="">Tips</a></li>
+          <li><a class="link" href="">Post</a></li>
+          <li><a class="link" href="">Latest</a></li>
+          <li><a class="link" href="">Contact</a></li>
+          <li><a href="">Account</a></li>
+          <li><img src="./img/moon.jpg" alt="" class="mode-btn mode-img" /></li>
+        </ul>
+      </div>
+      <div id="toggle"></div>
+    </nav>
+
+    <div class="wrapper">
+      <!-- Web Greetings -->
+      <section id="section-1" class="section section-1 reverse-container">
+        <article class="greetings-container">
+          <h1>ISAT U Weather Portal</h1>
+          <span class="gretting-time">Good Morning!</span>
+          <h3 class="greeting-content">
+            Hello Steven, welcome to Iloilo Science And Technology University
+            (Barotac Nuevo Campus). This weather portal will guide you about our
+            weather conditions.
+          </h3>
+          <button class="show-more-btn">Show more</button>
+        </article>
+        <div class="section-1-img">
+          <img class="university-img" src="./img/isat-u-bnc.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Weater Data Section -->
+
+      <section id="section-2" class="section fluid-container">
+        <div class="weater-data">
+          <img class="greeting-img" src="./img/isat-u-logo.png" alt="" />
+        </div>
+        <article>
+          <h1>Weather Data in IloIlo Science and Technology BNC Campus.</h1>
+          <h3 class="greeting-content">
+            Hey! Steven , this is the current weather about our university.
+          </h3>
+        </article>
+      </section>
+
+      <!-- Map -->
+      <section id="section-3" class="section section-1 reverse-container">
+        <article class="greetings-container">
+          <h1>ISAT U BNC Map</h1>
+          <h3 class="greeting-content">
+            Steven, get access in your current location and know your distance
+            from ISAT university (BNC) campus.
+          </h3>
+        </article>
+        <div class="section-1-img">
+          <img class="university-img" src="./img/map.jpg" alt="" />
+        </div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
